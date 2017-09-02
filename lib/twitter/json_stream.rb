@@ -323,7 +323,7 @@ module Twitter
       uri = uri_base + @options[:path].to_s
 
       # The hash SimpleOAuth accepts is slightly different from that of
-      # ROAuth.  To preserve backward compatability, fix the cache here
+      # ROAuth.  To preserve backward compatibility, fix the cache here
       # so that the arguments passed in don't need to change.
       oauth = {
         :consumer_key => @options[:oauth][:consumer_key],
